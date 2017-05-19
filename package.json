@@ -18,7 +18,7 @@
   },
   "scripts": {
     "bluemix": "babel-node index.js",
-    "start": "concurrently \"PORT=8080 react-scripts start\" \"PORT=8081 babel-watch index.js\"",
+    "start": "concurrently \"PORT=8080 react-scripts start\" \"PORT=8081 babel-watch server/index.js\"",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
