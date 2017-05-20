@@ -7,6 +7,9 @@ app.use(compression())
 
 app.use(express.static('./build'))
 
+app.get('/api/test', (req, res)=> {
+  res.json({ foo: 'bar' })
+})
 app.listen(port, (err) => {
   if (err) {
     console.log(err)

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.16.1",
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
@@ -29,5 +30,5 @@
       "stage-2"
     ]
   },
-  "proxy": "htpp://localhost:3000"
+  "proxy": "htpp://localhost:8081"
 }

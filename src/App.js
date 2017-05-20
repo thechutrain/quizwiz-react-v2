@@ -1,8 +1,22 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import * as axios from 'axios';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      axios_data: {}
+    }
+  }
+  componentDidMount () {
+    axios.get('/api/test').then(function(result){
+      console.log('Result: ', result)
+      this.setState({ axios_data: result.data})
+    }.bind(this))
+  }
+  
   render() {
     return (
       <div className="App">
